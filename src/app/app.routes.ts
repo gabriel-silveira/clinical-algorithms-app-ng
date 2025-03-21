@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import {AdminLayout} from './admin/admin.layout.component';
+import {AdminLayout} from './admin/admin.layout';
 import {UsersPage} from './admin/users/users.page';
 import {CategoriesPage} from './admin/categories/categories.page';
 import {AlgorithmsPage} from './admin/algorithms/algorithms.page';
@@ -7,6 +7,7 @@ import {AlgorithmsPage} from './admin/algorithms/algorithms.page';
 export const routes: Routes = [
   {
     path: 'admin',
+    title: 'Administração',
     component: AdminLayout,
     children: [
       {
